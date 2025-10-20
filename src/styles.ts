@@ -2,91 +2,55 @@ import type { CSSProperties } from "react";
 
 const styles = {
     page: {
-    maxWidth: 980,
-    margin: "32px auto",
-    padding: "0 16px 48px",
-    display: "grid",
-    gap: 12,
-    } as React.CSSProperties,
-    header: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: 16,
-    border: "1px solid #e5e7eb",
-    borderRadius: 14,
-    background: "#fafafa",
-    } as React.CSSProperties,
+      fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      backgroundColor: "#0f172a",
+      color: "#f1f5f9",
+      minHeight: "100vh",
+      display: "flex",
+      flexDirection: "column" as const,
+      alignItems: "center",
+      justifyContent: "flex-start",
+      padding: "2rem",
+    },
+  
     grid: {
-    display: "grid",
-    gridTemplateColumns: "360px 1fr",
-    gap: 12,
-    alignItems: "start",
-    } as React.CSSProperties,
-    card: {
-    border: "1px solid #e5e7eb",
-    borderRadius: 14,
-    background: "white",
-    overflow: "hidden",
-    } as React.CSSProperties,
-    cardHeader: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: 12,
-    borderBottom: "1px solid #e5e7eb",
-    background: "#fafafa",
-    } as React.CSSProperties,
-    btnPrimary: {
-    padding: "10px 14px",
-    borderRadius: 10,
-    border: "1px solid #1f2937",
-    background: "#111827",
-    color: "white",
-    cursor: "pointer",
-    } as React.CSSProperties,
-    btnSecondary: {
-    padding: "10px 14px",
-    borderRadius: 10,
-    border: "1px solid #d1d5db",
-    background: "white",
-    cursor: "pointer",
-    } as React.CSSProperties,
-    btnGhost: {
-    padding: "8px 12px",
-    borderRadius: 10,
-    border: "1px solid #e5e7eb",
-    background: "white",
-    cursor: "pointer",
-    } as React.CSSProperties,
-    badgeOk: {
-    background: "#e6f4ea",
-    color: "#1b5e20",
-    padding: "6px 10px",
-    borderRadius: 999,
-    fontWeight: 700,
-    fontSize: 12,
-    } as React.CSSProperties,
-    badgeMuted: {
-    background: "#eef2ff",
-    color: "#3730a3",
-    padding: "6px 10px",
-    borderRadius: 999,
-    fontWeight: 700,
-    fontSize: 12,
-    } as React.CSSProperties,
-    select: {
-    padding: "10px 12px",
-    borderRadius: 10,
-    border: "1px solid #d1d5db",
-    minWidth: 140,
-    } as React.CSSProperties,
+      display: "grid",
+      gridTemplateColumns: "300px 1fr",
+      gap: "2rem",
+      width: "100%",
+      maxWidth: "1200px",
+      marginTop: "1.5rem",
+    },
+  
     footer: {
-    marginTop: 8,
-    textAlign: "center",
-    opacity: 0.7,
-    } as React.CSSProperties,
-    };
-    
-    
-    export default styles;
+      marginTop: "3rem",
+      paddingTop: "1rem",
+      borderTop: "1px solid rgba(255,255,255,0.1)",
+      fontSize: "0.9rem",
+      opacity: 0.8,
+      textAlign: "center" as const,
+    },
+  
+    card: {
+      backgroundColor: "#1e293b",
+      borderRadius: "0.75rem",
+      padding: "1rem",
+      boxShadow: "0 0 10px rgba(0,0,0,0.3)",
+    },
+  
+    button: {
+      backgroundColor: "#3b82f6",
+      color: "#fff",
+      border: "none",
+      padding: "0.6rem 1rem",
+      borderRadius: "0.4rem",
+      cursor: "pointer",
+      fontSize: "0.95rem",
+      transition: "background 0.2s ease-in-out",
+    },
+  
+    buttonDisabled: {
+      backgroundColor: "#475569",
+      cursor: "not-allowed",
+    },
+  };
